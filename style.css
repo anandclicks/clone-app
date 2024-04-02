@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"roboto" ;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.wrapperDiv{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 100px;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.notification {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.mainImg{
+    z-index: 9;
+}
+.main{
+    z-index: 99;
+    position: relative;
+}
+.name h1 {
+    font-size: 40px;
+}
+.mainImg{
+    background-image: url("https://images.unsplash.com/photo-1605951654320-a55377b36744?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s ease;
+}
+.otherInformation {
+    background: linear-gradient(to top,#000,#000,transparent);
+}
+.status{
+    z-index: 999;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.messageBox{
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: -100%;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.pfLogo{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.pfLogo  {
+    overflow: hidden;
+    padding: 3px;
+}
+.pfLogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
